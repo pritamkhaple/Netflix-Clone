@@ -183,22 +183,31 @@ nav button{
     color: white;
     text-align: center;
     padding: 34px;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+    width: 1200px;
+    margin: auto;
 }
 
 .faq-box{
     transition: all 0.5s ease-out;
     display: flex;
     background-color: gray;
-    padding: 50px;
+    padding: 2rem;
     /* width: 50%; */
-    max-width: 50vw;
-    height: 10px;
+    /* max-width: 35vw; */
+    height: 4px;
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto;
-    font-size: 1.6rem;
+    font-size: 1rem;
     cursor: pointer;
+}
+
+.faq-box img{
+    width: 3rem;
+    height: auto;
+    position: relative;
+    top: 7px;
 }
 
 .faq-box:hover{
@@ -260,7 +269,17 @@ footer{
 @media screen and (max-width: 1300px){
 
 .nav-div{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.banner-txt{
+    padding: 0px 1rem;
+}
+
+.banner-txt-button{
+    display: grid;
 }
 
 .first{
@@ -274,7 +293,20 @@ footer{
 }
 
 .btn-red{
-    padding: 0;
+    /* width: 11rem; */
+    margin: auto;
+}
+
+.faq{
+    width: 80%;
+    font-size: 1rem;
+}
+
+.faq-box{
+    width: 80%;
+    margin: 0 auto 19px auto;
+    font-size: 1rem;
+    max-width: fit-content;
 }
 
 }
